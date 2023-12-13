@@ -1,5 +1,7 @@
 import ply.lex as lex
+import ply.yacc as yacc
 
+#lexer
 tokens = (
     'IDENTIFIER',
     'NUMBER',
@@ -20,8 +22,7 @@ def t_error(t):
 
 lexer = lex.lex()
 
-import ply.yacc as yacc
-
+#parser
 def p_expression_plus(p):
     'expression : expression PLUS term'
     p[0] = p[1] + p[3]
@@ -43,6 +44,7 @@ def p_error(p):
 
 parser = yacc.yacc()
 
+#main run
 with open(input("Masukkan nama file: "), 'r') as file:
     input_text = file.read()
 
