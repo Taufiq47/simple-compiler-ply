@@ -1,4 +1,3 @@
-# lexer.py
 import ply.lex as lex
 
 tokens = (
@@ -21,8 +20,6 @@ def t_error(t):
 
 lexer = lex.lex()
 
-# parser.py
-# parser.py
 import ply.yacc as yacc
 
 def p_expression_plus(p):
@@ -46,7 +43,6 @@ def p_error(p):
 
 parser = yacc.yacc()
 
-# main.py
 with open(input("Masukkan nama file: "), 'r') as file:
     input_text = file.read()
 
