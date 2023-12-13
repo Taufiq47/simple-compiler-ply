@@ -7,7 +7,7 @@ Anggota Kelompok :
 - Eka Putri Difayanti (D121221035)
 
 Cara Kerja :
-  ketik pip install ply di terminal
-  kemudian run file compiler.py
-  input file yang ingin di compile, contoh : tes.txt
+  - ketik pip install ply di terminal
+  - kemudian run file compiler.py
+  - input file yang ingin di compile, contoh : tes.txt
   
